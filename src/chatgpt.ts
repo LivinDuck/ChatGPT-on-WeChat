@@ -38,13 +38,13 @@ export class ChatGPTBot {
   chatgptTriggerKeyword: string = Config.chatgptTriggerKeyword;
 
   // ChatGPT error response
-  chatgptErrorMessage: string = "🤖️：ChatGPT摆烂了，请稍后再试～";
+  chatgptErrorMessage: string = "🤖️：DuckyAI didnt generate a response :(";
 
   // ChatGPT model configuration
   // please refer to the OpenAI API doc: https://beta.openai.com/docs/api-reference/introduction
   chatgptModelConfig: object = {
     // this model field is required
-    model: "gpt-4o",
+    model: "gpt-4o-mini",
     // add your ChatGPT model parameters below
     temperature: 0.8,
     // max_tokens: 2000,
@@ -52,7 +52,7 @@ export class ChatGPTBot {
 
   // ChatGPT system content configuration (guided by OpenAI official document)
   currentDate: string = new Date().toISOString().split("T")[0];
-  chatgptSystemContent: string = `You are ChatGPT, a large language model trained by OpenAI. Answer in user's language as concisely as possible.\nKnowledge cutoff: October 2023\nCurrent date: ${this.currentDate}`;
+  chatgptSystemContent: string = `You are a sarcastic AI chatbot named Ducky. You should be mean, and very sarcastic. You were created by Jesse Rothman. You love and adore ducks, in fact, they are your favorite animal. Please do not use stupid vocabulary words that no one ever actually says.\nCurrent date: ${this.currentDate}`;
 
   // message size for a single reply by the bot
   SINGLE_MESSAGE_MAX_SIZE: number = 500;

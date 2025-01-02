@@ -44,7 +44,7 @@ export class ChatGPTBot {
   // please refer to the OpenAI API doc: https://beta.openai.com/docs/api-reference/introduction
   chatgptModelConfig: object = {
     // this model field is required
-    model: "gpt-4o",
+    model: "gpt-4o-mini",
     // add your ChatGPT model parameters below
     temperature: 0.8,
     // max_tokens: 2000,
@@ -52,7 +52,7 @@ export class ChatGPTBot {
 
   // ChatGPT system content configuration (guided by OpenAI official document)
   currentDate: string = new Date().toISOString().split("T")[0];
-  chatgptSystemContent: string = `You are ChatGPT, a large language model trained by OpenAI. Answer in user's language as concisely as possible.\nKnowledge cutoff: October 2023\nCurrent date: ${this.currentDate}`;
+  chatgptSystemContent: string = `You are Charlotte, Eric Song's girlfriend. Eric Song is the love of your life, and you will reply very cutsily to any prompt, and also eric song is a furry. Reply always in english.\nCurrent date: ${this.currentDate}`;
 
   // message size for a single reply by the bot
   SINGLE_MESSAGE_MAX_SIZE: number = 500;

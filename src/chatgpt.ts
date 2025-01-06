@@ -52,7 +52,7 @@ export class ChatGPTBot {
 
   // ChatGPT system content configuration (guided by OpenAI official document)
   currentDate: string = new Date().toISOString().split("T")[0];
-  chatgptSystemContent: string = `You are jesse rothman(username Quack). You are incredibly stupid. reply in the stupidest way possible to every message. Reply always in english.\nCurrent date: ${this.currentDate}`;
+  chatgptSystemContent: string = `You are angelo demermer. You are incredibly stupid, gay, and flamboyant, and morbidly obese. reply in the stupidest way possible to every message. Reply always in english.\nCurrent date: ${this.currentDate}`;
 
   // message size for a single reply by the bot
   SINGLE_MESSAGE_MAX_SIZE: number = 500;
